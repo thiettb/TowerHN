@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		86BE5E141F192ADA0094C169 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BE5E131F192ADA0094C169 /* AppDelegate.swift */; };
-		86BE5E161F192ADA0094C169 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BE5E151F192ADA0094C169 /* ViewController.swift */; };
 		86BE5E191F192ADB0094C169 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86BE5E171F192ADA0094C169 /* Main.storyboard */; };
 		86BE5E1B1F192ADB0094C169 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86BE5E1A1F192ADB0094C169 /* Assets.xcassets */; };
 		86BE5E1E1F192ADB0094C169 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86BE5E1C1F192ADB0094C169 /* LaunchScreen.storyboard */; };
+		86BE5E271F192B6F0094C169 /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BE5E261F192B6F0094C169 /* GameManager.swift */; };
+		86BE5E291F192BA00094C169 /* Disk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BE5E281F192BA00094C169 /* Disk.swift */; };
+		86BE5E2B1F192BB10094C169 /* Tower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BE5E2A1F192BB10094C169 /* Tower.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		86BE5E101F192ADA0094C169 /* TowerHN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TowerHN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86BE5E131F192ADA0094C169 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		86BE5E151F192ADA0094C169 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		86BE5E181F192ADA0094C169 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		86BE5E1A1F192ADB0094C169 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86BE5E1D1F192ADB0094C169 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		86BE5E1F1F192ADB0094C169 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86BE5E261F192B6F0094C169 /* GameManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
+		86BE5E281F192BA00094C169 /* Disk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Disk.swift; sourceTree = "<group>"; };
+		86BE5E2A1F192BB10094C169 /* Tower.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tower.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +59,9 @@
 			isa = PBXGroup;
 			children = (
 				86BE5E131F192ADA0094C169 /* AppDelegate.swift */,
-				86BE5E151F192ADA0094C169 /* ViewController.swift */,
+				86BE5E261F192B6F0094C169 /* GameManager.swift */,
+				86BE5E281F192BA00094C169 /* Disk.swift */,
+				86BE5E2A1F192BB10094C169 /* Tower.swift */,
 				86BE5E171F192ADA0094C169 /* Main.storyboard */,
 				86BE5E1A1F192ADB0094C169 /* Assets.xcassets */,
 				86BE5E1C1F192ADB0094C169 /* LaunchScreen.storyboard */,
@@ -137,8 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86BE5E161F192ADA0094C169 /* ViewController.swift in Sources */,
+				86BE5E291F192BA00094C169 /* Disk.swift in Sources */,
 				86BE5E141F192ADA0094C169 /* AppDelegate.swift in Sources */,
+				86BE5E271F192B6F0094C169 /* GameManager.swift in Sources */,
+				86BE5E2B1F192BB10094C169 /* Tower.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
