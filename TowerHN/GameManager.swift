@@ -7,14 +7,6 @@
 //
 
 import UIKit
-//struct Step{
-//    var towerFrom : Peg
-//    var towerTo: Peg
-//    var
-//}
-
-
-
 class GameManager: UIViewController {
     
     //MARK:: Parametters - User
@@ -77,13 +69,9 @@ class GameManager: UIViewController {
         print("Number of moves: \(moves.count)")
         print("")
 
-//        print("\nFinish:")
-//        print(pegA.description)
-//        print(pegB.description)
-//        print(pegC.description)
-        self.addBird()
+
         self.animation()
-        
+
     }
    
     func animation(){
@@ -174,11 +162,7 @@ class GameManager: UIViewController {
                 disk.center = self.tower.viewTempTowerC.center
         }
     }
-    // Di len cho Chim
-    func moveUpBird(peg: Int){
-        
-    }
-    
+  
     // Di ngang
     func moveCross(disk: UIView , peg : Int){
         if peg == 0{
@@ -200,7 +184,7 @@ class GameManager: UIViewController {
             else if count == 1 {
                 disk.center = self.tower.diskTempTowerA_Array[1].center
             }
-            else if peg == 2{
+            else if count == 2{
                 disk.center = self.tower.diskTempTowerA_Array[2].center
             }
         }
@@ -211,7 +195,7 @@ class GameManager: UIViewController {
             else if count == 1{
                 disk.center = self.tower.diskTempTowerB_Array[1].center
             }
-            else if peg == 2{
+            else if count == 2{
                 disk.center = self.tower.diskTempTowerB_Array[2].center
             }
         }
@@ -222,7 +206,7 @@ class GameManager: UIViewController {
             else if count == 1{
                 disk.center = self.tower.diskTempTowerC_Array[1].center
             }
-            else if peg == 2 {
+            else if count == 2 {
                 disk.center = self.tower.diskTempTowerC_Array[2].center
             }
         }
