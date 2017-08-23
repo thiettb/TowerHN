@@ -45,10 +45,15 @@ class Tower: UIView {
         for i in 0...(disk_count - 1){
             var tempView = UIView()
             tempView = UIView(frame: CGRect(x: self.disk_coordinate_X + CGFloat(i)*disk_width_init/10, y: self.disk_coordinate_Y - CGFloat(i)*disk_height_init, width: disk_width_init - CGFloat(i)*2*disk_width_init/10, height: disk_height_init))
+            
             tempView.backgroundColor = UIColor.red
-//            tempView.text = "\(3 - i)"
-//            tempView.textAlignment = .center
+            
             tempView.layer.cornerRadius = 10
+            
+            let image = UIImageView()
+            image.image = UIImage(named: "Disk")
+            tempView.addSubview(image)
+            
             tempView.backgroundColor = colors[i]
             self.addSubview(tempView)
             diskArray.append(tempView)

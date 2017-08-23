@@ -1,5 +1,4 @@
-i
-TowerHaNoi written by Tran Ba Thiet
+![](/assets/Simulator Screen Shot Aug 23, 2017, 10.49.22.png)iTowerHaNoi written by Tran Ba Thiet
 
 Language: Swift
 
@@ -12,22 +11,22 @@ MIT license
 Ta quy ước:
 
 ```
-Cột A: là cột đầu chứa tất cả các đĩa
+        Cột A: là cột đầu chứa tất cả các đĩa
 
-Cột B: là cột trung gian
+        Cột B: là cột trung gian
 
-Cột C: là cột đích
+        Cột C: là cột đích
 ```
 
-Nếu chỉ có 1 đĩa thì ta di chuyển từ cột A -&gt; cột C -&gt; done
+Nếu chỉ có 1 đĩa thì ta di chuyển từ cột A -&gt; cột C -&gt; done  
 Nếu có 2 đĩa:
 
 ```
-Đầu tiên ta di chuyển đĩa trên cùng ở cột A -> cột B
+        Đầu tiên ta di chuyển đĩa trên cùng ở cột A -> cột B
 
-Sau đó di chuyển đĩa còn lại ở cột A -> cột C
+        Sau đó di chuyển đĩa còn lại ở cột A -> cột C
 
-Và cuối cùng di chuyển đĩa từ cột B -> cột C
+        Và cuối cùng di chuyển đĩa từ cột B -> cột C
 ```
 
 Từ 2 trường hợp trên ta đưa ra bài toán đệ quy cho bài toán tháp Hà Nội với số lượng &gt; 3 đĩa
@@ -51,3 +50,9 @@ Mỗi Step trong thuật toán nó sẽ trả về vị trí tháp đầu đến
 Mỗi lần di chuyển Đĩa sẽ đi lên rồi đi ngang sau đó đi xuống =&gt; Tương ứng với nó ta sẽ tạo ra 3 hàm để miêu tả hành động cho nó.
 
 Mỗi Step trong thuật toán ta sẽ cho nó Animation tương ứng với Step đó. Vì animation sẽ là liên tục đĩa 1 di chuyển xong thì đĩa 2 di chuyển nên tránh bị gián đoạn nên ta sẽ dùng đệ quy cho hàm Animation\(\) với điều kiện dừng là chính bằng số lần cần di chuyển mà thuật toán trả về.
+
+# 3.Một số hình ảnh giao diện
+![](/assets/2.png)
+![](/assets/3.png)
+![](/assets/4.png)
+![](/assets/5.png)
