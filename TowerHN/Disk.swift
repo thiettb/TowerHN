@@ -78,16 +78,12 @@ struct Move{
 
 struct HanoiSolver {
     
-    // Return sequence of moves needed to move all disks from one peg to another,
-    // using a third as intermediary
-//    var arrayAction: [TowerStep]!
     func moveAllDisksFromPeg(fromPeg: Peg, toPeg: Peg, otherPeg: Peg) -> [Move] {
         return moveNumberOfDisks(count: fromPeg.diskCount,
                                  fromPeg:  fromPeg,
                                  toPeg:    toPeg,
                                  otherPeg: otherPeg)
     }
-
     
     func moveNumberOfDisks(count: Int, fromPeg: Peg, toPeg: Peg, otherPeg: Peg) -> [Move] {
         var moves = Array<Move>()

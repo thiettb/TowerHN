@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="npq-3b-LWK">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Game Manager-->
+        <!--Mô phỏng bài toán Tháp Hà Nội-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="GameManager" customModule="TowerHN" customModuleProvider="target" sceneMemberID="viewController">
@@ -20,11 +20,78 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TaJ-JK-MFx">
+                                <rect key="frame" x="142" y="72" width="90" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="Mbl-iP-MnR"/>
+                                    <constraint firstAttribute="height" constant="21" id="i2x-kH-HDe"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wb5-du-vfy">
+                                <rect key="frame" x="164" y="139" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="91p-OC-wkO"/>
+                                    <constraint firstAttribute="width" constant="46" id="XM1-og-PuG"/>
+                                </constraints>
+                                <state key="normal" title="Delete"/>
+                                <connections>
+                                    <action selector="Clear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jD6-5e-gYH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OT5-Ea-c7l">
+                                <rect key="frame" x="164" y="101" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="cnZ-MT-a86"/>
+                                    <constraint firstAttribute="height" constant="30" id="uV6-6O-una"/>
+                                </constraints>
+                                <state key="normal" title="Run"/>
+                                <connections>
+                                    <action selector="RunAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pNb-Li-3Ur"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="OT5-Ea-c7l" firstAttribute="top" secondItem="TaJ-JK-MFx" secondAttribute="bottom" constant="8" id="CdU-0h-SLn"/>
+                            <constraint firstItem="OT5-Ea-c7l" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FQD-K0-Hg2"/>
+                            <constraint firstItem="TaJ-JK-MFx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NYf-u1-NQm"/>
+                            <constraint firstItem="TaJ-JK-MFx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="TMd-3Z-MgT"/>
+                            <constraint firstItem="wb5-du-vfy" firstAttribute="top" secondItem="OT5-Ea-c7l" secondAttribute="bottom" constant="8" id="aBK-FR-UZ9"/>
+                            <constraint firstItem="wb5-du-vfy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rrp-TW-aEJ"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Mô phỏng bài toán Tháp Hà Nội" id="flh-rD-O0G"/>
+                    <connections>
+                        <outlet property="clear" destination="wb5-du-vfy" id="JyJ-57-Lfk"/>
+                        <outlet property="run" destination="OT5-Ea-c7l" id="XvQ-rp-kAQ"/>
+                        <outlet property="tf_input" destination="TaJ-JK-MFx" id="ghE-6V-x1p"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1079.2" y="97.601199400299862"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Fye-Yl-jPT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="npq-3b-LWK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="a5N-zm-CKi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="r95-Qp-GAg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b1G-Ty-EKp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-36" y="98"/>
         </scene>
     </scenes>
 </document>

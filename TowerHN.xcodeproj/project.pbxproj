@@ -7,12 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		86AC1C7B1F39C1AA00011ACF /* bird0.png in Resources */ = {isa = PBXBuildFile; fileRef = 86AC1C751F39C1AA00011ACF /* bird0.png */; };
-		86AC1C7C1F39C1AA00011ACF /* bird1.png in Resources */ = {isa = PBXBuildFile; fileRef = 86AC1C761F39C1AA00011ACF /* bird1.png */; };
-		86AC1C7D1F39C1AA00011ACF /* bird2.png in Resources */ = {isa = PBXBuildFile; fileRef = 86AC1C771F39C1AA00011ACF /* bird2.png */; };
-		86AC1C7E1F39C1AA00011ACF /* bird3.png in Resources */ = {isa = PBXBuildFile; fileRef = 86AC1C781F39C1AA00011ACF /* bird3.png */; };
-		86AC1C7F1F39C1AA00011ACF /* bird4.png in Resources */ = {isa = PBXBuildFile; fileRef = 86AC1C791F39C1AA00011ACF /* bird4.png */; };
-		86AC1C801F39C1AA00011ACF /* bird5.png in Resources */ = {isa = PBXBuildFile; fileRef = 86AC1C7A1F39C1AA00011ACF /* bird5.png */; };
+		86027FE41F48994500A893D0 /* halicoper.wav in Resources */ = {isa = PBXBuildFile; fileRef = 86027FE31F48994500A893D0 /* halicoper.wav */; };
 		86BE5E141F192ADA0094C169 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BE5E131F192ADA0094C169 /* AppDelegate.swift */; };
 		86BE5E191F192ADB0094C169 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86BE5E171F192ADA0094C169 /* Main.storyboard */; };
 		86BE5E1B1F192ADB0094C169 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86BE5E1A1F192ADB0094C169 /* Assets.xcassets */; };
@@ -27,12 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		86AC1C751F39C1AA00011ACF /* bird0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bird0.png; sourceTree = "<group>"; };
-		86AC1C761F39C1AA00011ACF /* bird1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bird1.png; sourceTree = "<group>"; };
-		86AC1C771F39C1AA00011ACF /* bird2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bird2.png; sourceTree = "<group>"; };
-		86AC1C781F39C1AA00011ACF /* bird3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bird3.png; sourceTree = "<group>"; };
-		86AC1C791F39C1AA00011ACF /* bird4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bird4.png; sourceTree = "<group>"; };
-		86AC1C7A1F39C1AA00011ACF /* bird5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bird5.png; sourceTree = "<group>"; };
+		86027FE31F48994500A893D0 /* halicoper.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = halicoper.wav; sourceTree = "<group>"; };
 		86BE5E101F192ADA0094C169 /* TowerHN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TowerHN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86BE5E131F192ADA0094C169 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86BE5E181F192ADA0094C169 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -118,12 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				86BE5E1A1F192ADB0094C169 /* Assets.xcassets */,
-				86AC1C751F39C1AA00011ACF /* bird0.png */,
-				86AC1C761F39C1AA00011ACF /* bird1.png */,
-				86AC1C771F39C1AA00011ACF /* bird2.png */,
-				86AC1C781F39C1AA00011ACF /* bird3.png */,
-				86AC1C791F39C1AA00011ACF /* bird4.png */,
-				86AC1C7A1F39C1AA00011ACF /* bird5.png */,
+				86027FE31F48994500A893D0 /* halicoper.wav */,
 				86BE5E131F192ADA0094C169 /* AppDelegate.swift */,
 				86BE5E1C1F192ADB0094C169 /* LaunchScreen.storyboard */,
 				86BE5E1F1F192ADB0094C169 /* Info.plist */,
@@ -200,15 +185,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86AC1C7C1F39C1AA00011ACF /* bird1.png in Resources */,
-				86AC1C7F1F39C1AA00011ACF /* bird4.png in Resources */,
-				86AC1C801F39C1AA00011ACF /* bird5.png in Resources */,
 				86BE5E1E1F192ADB0094C169 /* LaunchScreen.storyboard in Resources */,
-				86AC1C7B1F39C1AA00011ACF /* bird0.png in Resources */,
 				86BE5E1B1F192ADB0094C169 /* Assets.xcassets in Resources */,
+				86027FE41F48994500A893D0 /* halicoper.wav in Resources */,
 				86BE5E191F192ADB0094C169 /* Main.storyboard in Resources */,
-				86AC1C7E1F39C1AA00011ACF /* bird3.png in Resources */,
-				86AC1C7D1F39C1AA00011ACF /* bird2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
